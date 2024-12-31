@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 200%;
+  }
+}
+
+.chart {
+  display: flex;
+}
+
+.chart img {
+  max-width: 100%;
+}
+
+.subchart {
+  flex: 1;
+  padding: 0.5em;
+}
+
+.separater {
+  height: 1px;
+  background-color: #eee;
+  margin: 0.5em;
+}
