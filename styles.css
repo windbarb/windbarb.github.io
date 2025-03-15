@@ -3,27 +3,44 @@ body {
   padding: 0;
 }
 
-@media only screen and (max-width: 768px) {
-  body {
-    width: 200%;
-  }
+.container {
+  margin: 0 auto;
+  max-width: 850px;
 }
 
 .chart {
+  padding: 8px;
+  border-top: 1px solid #12345630;
+}
+
+.chart:first-child {
+  border: none;
+}
+
+.chart .graph {
+  position: relative;
+  margin: 0 24px;
+  padding-top: 40%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.chart .label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -20px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-align: center;
+}
+
+.checkbox {
+  padding: 2px;
+}
+
+.navigate {
+  padding: 16px 8px;
   display: flex;
-}
-
-.chart img {
-  max-width: 100%;
-}
-
-.subchart {
-  flex: 1;
-  padding: 0.5em;
-}
-
-.separater {
-  height: 1px;
-  background-color: #eee;
-  margin: 0.5em;
+  justify-content: center;
 }
